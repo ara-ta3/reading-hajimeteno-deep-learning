@@ -17,6 +17,9 @@ env/bin/pip:
 virtualenv:
 	virtualenv -p python2 env
 
+download: lib/deel
+	cd $</misc && ./getPretrainedModels.sh
+
 lib/deel: lib
 	git clone https://github.com/uei/deel.git lib/deel
 
