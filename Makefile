@@ -1,5 +1,5 @@
 
-run: env/bin/jupyter
+run/jupyter: env/bin/jupyter
 	$< notebook
 
 clean:
